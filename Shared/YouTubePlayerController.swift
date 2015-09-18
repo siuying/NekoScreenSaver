@@ -11,21 +11,16 @@ import Foundation
 import AVFoundation
 import AVKit
 
-public class YouTubeScreenSaverController : NSObject {
-    public var playerView : AVPlayerView!
-
+public class YouTubePlayerController : NSObject {
     private var youTubeId : String
-    private dynamic var player : AVPlayer?
+    public dynamic var player : AVPlayer
     
     public init(youTubeId: String) {
         self.youTubeId = youTubeId
+        self.player = AVPlayer()
     }
     
     public func setup() {
-        // build a player
-        playerView = AVPlayerView()
-        playerView.controlsStyle = .None
-
         addObserver(self, forKeyPath: "player.status", options: .New, context: nil)
 
         // find video URL
@@ -54,26 +49,24 @@ public class YouTubeScreenSaverController : NSObject {
     }
     
     func playVideoAtURL(URL: NSURL) {
-        self.player = AVPlayer(URL: URL)
-        self.playerView.player = player
-        
+        self.player.replaceCurrentItemWithPlayerItem(AVPlayerItem(URL: URL))
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "playerDidEnded:", name: AVPlayerItemDidPlayToEndTimeNotification, object: nil)
     }
     
     func playerDidEnded(n: NSNotification) {
-        self.player?.seekToTime(kCMTimeZero)
+        self.player.seekToTime(kCMTimeZero)
     }
     
     func seekToRandomTimeAndPlay() {
-        if let duration = self.player?.currentItem?.asset.duration {
+        if let duration = self.player.currentItem?.asset.duration {
             let randomTime = Float64(arc4random() % UInt32(duration.seconds))
-            self.player?.seekToTime(CMTimeMakeWithSeconds(randomTime, Int32(NSEC_PER_SEC)), toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
-            self.player?.play()
+            self.player.seekToTime(CMTimeMakeWithSeconds(randomTime, Int32(NSEC_PER_SEC)), toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
+            self.player.play()
         }
     }
     
     @objc public override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
-        if keyPath == "player.status" && self.player?.status == .ReadyToPlay {
+        if keyPath == "player.status" && self.player.status == .ReadyToPlay {
             self.seekToRandomTimeAndPlay()
         }
     }

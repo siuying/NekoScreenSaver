@@ -12,8 +12,10 @@ import AVKit
 
 class NekoScreenSaverView : ScreenSaverView {
     static let NekoVideoId = "Zi9cK-lI190"
-    let screenSaverController = YouTubeScreenSaverController(youTubeId: "Zi9cK-lI190")
-    
+
+    let screenSaverController = YouTubePlayerController(youTubeId: "Zi9cK-lI190")
+    var playerView : AVPlayerView!
+
     override init?(frame: NSRect, isPreview: Bool) {
         super.init(frame: frame, isPreview: isPreview)
         self.animationTimeInterval = 1.0 / 30.0
@@ -26,11 +28,14 @@ class NekoScreenSaverView : ScreenSaverView {
     }
     
     func setup() {
-        screenSaverController.setup()
+        // build a player
+        playerView = AVPlayerView()
+        playerView.controlsStyle = .None
+        playerView.frame = self.bounds
+        playerView.autoresizingMask = [.ViewHeightSizable, .ViewWidthSizable]
+        self.addSubview(playerView)
 
-        // setup frame
-        screenSaverController.playerView.frame = self.bounds
-        screenSaverController.playerView.autoresizingMask = [.ViewHeightSizable, .ViewWidthSizable]
-        self.addSubview(screenSaverController.playerView)
+        screenSaverController.setup()
+        playerView.player = screenSaverController.player
     }
 }
