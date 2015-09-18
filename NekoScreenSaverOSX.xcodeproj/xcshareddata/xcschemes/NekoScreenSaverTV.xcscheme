@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "543B00B11BAC29150020DF06"
-               BuildableName = "NekoScreenSaverOSX.saver"
-               BlueprintName = "NekoScreenSaverOSX"
+               BlueprintIdentifier = "543B00F41BAC49DF0020DF06"
+               BuildableName = "NekoScreenSaverTV.app"
+               BlueprintName = "NekoScreenSaverTV"
                ReferencedContainer = "container:NekoScreenSaverOSX.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "543B00B11BAC29150020DF06"
-            BuildableName = "NekoScreenSaverOSX.saver"
-            BlueprintName = "NekoScreenSaverOSX"
+            BlueprintIdentifier = "543B00F41BAC49DF0020DF06"
+            BuildableName = "NekoScreenSaverTV.app"
+            BlueprintName = "NekoScreenSaverTV"
             ReferencedContainer = "container:NekoScreenSaverOSX.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -51,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "543B00B11BAC29150020DF06"
-            BuildableName = "NekoScreenSaverOSX.saver"
-            BlueprintName = "NekoScreenSaverOSX"
+            BlueprintIdentifier = "543B00F41BAC49DF0020DF06"
+            BuildableName = "NekoScreenSaverTV.app"
+            BlueprintName = "NekoScreenSaverTV"
             ReferencedContainer = "container:NekoScreenSaverOSX.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -69,15 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "543B00B11BAC29150020DF06"
-            BuildableName = "NekoScreenSaverOSX.saver"
-            BlueprintName = "NekoScreenSaverOSX"
+            BlueprintIdentifier = "543B00F41BAC49DF0020DF06"
+            BuildableName = "NekoScreenSaverTV.app"
+            BlueprintName = "NekoScreenSaverTV"
             ReferencedContainer = "container:NekoScreenSaverOSX.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
