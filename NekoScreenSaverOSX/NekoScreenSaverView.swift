@@ -12,8 +12,7 @@ import AVKit
 
 class NekoScreenSaverView : ScreenSaverView {
     static let NekoVideoId = "Zi9cK-lI190"
-
-    let screenSaverController = YouTubePlayerController(youTubeId: "Zi9cK-lI190")
+    let screenSaverController = YouTubePlayerController(youTubeId: NekoVideoId)
     var playerView : AVPlayerView!
 
     override init?(frame: NSRect, isPreview: Bool) {

@@ -28,6 +28,7 @@
 		543B013D1BAC55700020DF06 /* IGYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 543B013B1BAC55700020DF06 /* IGYouTubeExtractor.m */; };
 		543B013E1BAC55700020DF06 /* IGYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 543B013B1BAC55700020DF06 /* IGYouTubeExtractor.m */; };
 		543B013F1BAC55700020DF06 /* IGYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 543B013B1BAC55700020DF06 /* IGYouTubeExtractor.m */; };
+		543B01511BAC590A0020DF06 /* YouTubePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B01261BAC4F560020DF06 /* YouTubePlayerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -354,6 +355,7 @@
 			files = (
 				543B013F1BAC55700020DF06 /* IGYouTubeExtractor.m in Sources */,
 				543B00FA1BAC49DF0020DF06 /* ViewController.swift in Sources */,
+				543B01511BAC590A0020DF06 /* YouTubePlayerController.swift in Sources */,
 				543B00F81BAC49DF0020DF06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
