@@ -408,6 +408,7 @@
 			baseConfigurationReference = B7DE9664B611CEB9F67DD250 /* Pods-NekoScreenSaverOSX.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = NekoScreenSaverOSX/Info.plist;
@@ -427,6 +428,7 @@
 			baseConfigurationReference = CD77359B22D88EE6CBF0B01C /* Pods-NekoScreenSaverOSX.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = NekoScreenSaverOSX/Info.plist;
