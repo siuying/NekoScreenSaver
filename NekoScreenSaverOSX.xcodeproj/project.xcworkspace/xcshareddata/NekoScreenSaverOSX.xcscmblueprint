@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F54997DE8744DAEB1BC0DEC3CD142C48DDF03968",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A1257F9EB6F683B8379A461F218E17763AB81A12" : 0,
+    "F54997DE8744DAEB1BC0DEC3CD142C48DDF03968" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2393C0E8-E522-4780-BD82-E90AE4CA9CA3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A1257F9EB6F683B8379A461F218E17763AB81A12" : "NekoScreenSaverOSX\/vendor\/IGYouTubeExtractor\/",
+    "F54997DE8744DAEB1BC0DEC3CD142C48DDF03968" : "NekoScreenSaverOSX\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NekoScreenSaverOSX",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NekoScreenSaverOSX.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/siuying\/IGYouTubeExtractor.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A1257F9EB6F683B8379A461F218E17763AB81A12"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/siuying\/NekoScreenSaver.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F54997DE8744DAEB1BC0DEC3CD142C48DDF03968"
+    }
+  ]
+}

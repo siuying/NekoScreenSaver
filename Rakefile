@@ -1,5 +1,5 @@
 require 'rubygems'
 
 task :build do
-  sh "xcodebuild -workspace ./NekoScreenSaverOSX.xcworkspace -scheme NekoScreenSaverOSX -parallelizeTargets -configuration Release -derivedDataPath Build build | xcpretty -c"
+  sh "xcodebuild -project ./NekoScreenSaverOSX.xcodeproj -scheme NekoScreenSaverOSX -parallelizeTargets -configuration Release -derivedDataPath Build build | xcpretty -c"
 end
