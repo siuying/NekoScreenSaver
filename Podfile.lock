@@ -1,0 +1,13 @@
+PODS:
+  - IGYouTubeExtractor (0.4.1)
+  - KVOController (1.0.3)
+
+DEPENDENCIES:
+  - IGYouTubeExtractor (= 0.4.1)
+  - KVOController
+
+SPEC CHECKSUMS:
+  IGYouTubeExtractor: 311ac5ba4c187bfec4884d0235dbacd7071b78ae
+  KVOController: 9fd8f0343670994e4b6f9f0b31f5a45663f3e1cf
+
+COCOAPODS: 0.38.2

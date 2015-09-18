@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		091D6ACE4797EED034518DEF6B1BA6F5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E252E61003A0F77AC2BF999A74FB498 /* AVFoundation.framework */; };
+		2DAD98BA591C0424DAAEB73099F71F09 /* Pods-NekoScreenSaverOSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C33DDE88B17567979FE0F1A56A5B49F /* Pods-NekoScreenSaverOSX-dummy.m */; };
+		46ED056AFC9098F89FC23BB5434934B3 /* Pods-NekoScreenSaverOSXPreview-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5606CD72D87ED1BB7979B90D3844DC27 /* Pods-NekoScreenSaverOSXPreview-dummy.m */; };
+		64D707AD7D3E8614CCFE80AA2424116A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8650F38A0F10F2F8787B7388E0AE4BC1 /* Cocoa.framework */; };
+		73B915FA5EE86D3AD1E346DF91EEBD75 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A02E39F7A9AE0A577BBB0D48853F84B6 /* Pods-dummy.m */; };
+		84B3F4A0477368050B348E528260E771 /* FBKVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7444956804F80A9545EAE88AF5E7DC4F /* FBKVOController.h */; };
+		8FE53B4C97B08F6A156B81E782DBCDE8 /* IGYouTubeExtractor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB8EBD1F9F33497FD54E73A4093ECEA /* IGYouTubeExtractor-dummy.m */; };
+		92AE8E0575BE26B24451BAB0E968A1B3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8650F38A0F10F2F8787B7388E0AE4BC1 /* Cocoa.framework */; };
+		A1E9E5526E3EB47BE94DE54A9F71B87B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8650F38A0F10F2F8787B7388E0AE4BC1 /* Cocoa.framework */; };
+		B842C0AB99033AD1E03B331E95F7520A /* IGYouTubeExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9BE9E7286DF164CDB4D67F83BAD6E0 /* IGYouTubeExtractor.h */; };
+		D2DC2E56B6AE7B76CA2E39DC246126E9 /* IGYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8451DFDAE2AB38F6723433347C5740 /* IGYouTubeExtractor.m */; };
+		D56409F2CE40998A7ACF011AADF4242C /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF750B4E338AC554B50265D7DFDE3D78 /* FBKVOController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DB98D14DC8016EBF4476403AECC665F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8650F38A0F10F2F8787B7388E0AE4BC1 /* Cocoa.framework */; };
+		F7893A45AC90EAAAB3D26D7F2DD11EC9 /* KVOController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BEF9583AE21365728295B765F34897 /* KVOController-dummy.m */; };
+		FE7A5CAD1E2BAF89D26E8AA04302D27B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8650F38A0F10F2F8787B7388E0AE4BC1 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2444E5F6B63FF460B77E7F0B3325B173 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3933CC6CF5B39925F548FF151FA6D40;
+			remoteInfo = KVOController;
+		};
+		2DE46FD1D2103A406364A323256729F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B608F33C42BD7D09360B1DB22C904415;
+			remoteInfo = IGYouTubeExtractor;
+		};
+		44566CE4B3AD13D055031AF01651E02B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B608F33C42BD7D09360B1DB22C904415;
+			remoteInfo = IGYouTubeExtractor;
+		};
+		66397AC7D8FA8007AFFC9738097AB82B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3933CC6CF5B39925F548FF151FA6D40;
+			remoteInfo = KVOController;
+		};
+		BCE04DA301DCADDAA32EC54315EBB740 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3933CC6CF5B39925F548FF151FA6D40;
+			remoteInfo = KVOController;
+		};
+		E29F9247DF6FC07A74B6426C2A6099C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B608F33C42BD7D09360B1DB22C904415;
+			remoteInfo = IGYouTubeExtractor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E252E61003A0F77AC2BF999A74FB498 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		11F455985C5D5D3BACB59C941AC1A413 /* libIGYouTubeExtractor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIGYouTubeExtractor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		14E773EDEC064E8D867A20E8FDDF27B3 /* Pods-NekoScreenSaverOSXPreview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NekoScreenSaverOSXPreview.debug.xcconfig"; sourceTree = "<group>"; };
+		2A083FEE2AA1D447339B86019ABB27D5 /* libPods-NekoScreenSaverOSXPreview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NekoScreenSaverOSXPreview.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FB0413226AC05BCE05DC443A6337AFE /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		43B3E01AE9A00589B561B2F9100E89E5 /* KVOController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVOController.xcconfig; sourceTree = "<group>"; };
+		4C33DDE88B17567979FE0F1A56A5B49F /* Pods-NekoScreenSaverOSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NekoScreenSaverOSX-dummy.m"; sourceTree = "<group>"; };
+		4C65575008AF33B6599BD5D0F6F413B5 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4D97AF87B108D628B756797BE2ADEC9C /* Pods-NekoScreenSaverOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NekoScreenSaverOSX.release.xcconfig"; sourceTree = "<group>"; };
+		5606CD72D87ED1BB7979B90D3844DC27 /* Pods-NekoScreenSaverOSXPreview-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NekoScreenSaverOSXPreview-dummy.m"; sourceTree = "<group>"; };
+		5D82A3DFFBC2369A4C2975DE5AB75842 /* IGYouTubeExtractor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGYouTubeExtractor-prefix.pch"; sourceTree = "<group>"; };
+		5F349B3457B716A9B4550BFA23EBDDB8 /* KVOController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "KVOController-Private.xcconfig"; sourceTree = "<group>"; };
+		652709EC03006EA5E962CF79F25778CD /* Pods-NekoScreenSaverOSXPreview-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NekoScreenSaverOSXPreview-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6B52717762C6E4E436402BE453DD7979 /* Pods-NekoScreenSaverOSXPreview-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NekoScreenSaverOSXPreview-acknowledgements.plist"; sourceTree = "<group>"; };
+		6BEA06FF99A4C47A4C2BCBCCBFFEE710 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C8451DFDAE2AB38F6723433347C5740 /* IGYouTubeExtractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGYouTubeExtractor.m; path = IGYouTubeExtractor/IGYouTubeExtractor.m; sourceTree = "<group>"; };
+		6F18E6824C8B9824D8892ABBC58E0DF6 /* IGYouTubeExtractor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IGYouTubeExtractor.xcconfig; sourceTree = "<group>"; };
+		7444956804F80A9545EAE88AF5E7DC4F /* FBKVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBKVOController.h; path = FBKVOController/FBKVOController.h; sourceTree = "<group>"; };
+		8650F38A0F10F2F8787B7388E0AE4BC1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		8F84C21723D0B6B9A87B44C6E5BE1DD3 /* libPods-NekoScreenSaverOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NekoScreenSaverOSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93BEF9583AE21365728295B765F34897 /* KVOController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KVOController-dummy.m"; sourceTree = "<group>"; };
+		94D9CC8B3F66CFC775052CDAFE568CAA /* Pods-NekoScreenSaverOSXPreview-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NekoScreenSaverOSXPreview-resources.sh"; sourceTree = "<group>"; };
+		9EFA0A6548E8AE2B9B9DBD5199489504 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02E39F7A9AE0A577BBB0D48853F84B6 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		A4C27A8DD756BD550E48CCBEC0637548 /* Pods-NekoScreenSaverOSXPreview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NekoScreenSaverOSXPreview.release.xcconfig"; sourceTree = "<group>"; };
+		AF750B4E338AC554B50265D7DFDE3D78 /* FBKVOController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBKVOController.m; path = FBKVOController/FBKVOController.m; sourceTree = "<group>"; };
+		B1BF648E9B30B00E6A5CBB8B9147971E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		B8539826A7F7EC674410C408BD2C23AE /* libKVOController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKVOController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BEB8EBD1F9F33497FD54E73A4093ECEA /* IGYouTubeExtractor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IGYouTubeExtractor-dummy.m"; sourceTree = "<group>"; };
+		BF78A0F1255D5A99AFAC502DA9DCB665 /* Pods-NekoScreenSaverOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NekoScreenSaverOSX.debug.xcconfig"; sourceTree = "<group>"; };
+		C208337D6DFAE02BA67A0BAD1535D178 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		C45DDCEEEA3997C16523687D41B16AA3 /* Pods-NekoScreenSaverOSX-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NekoScreenSaverOSX-acknowledgements.plist"; sourceTree = "<group>"; };
+		DA9BE9E7286DF164CDB4D67F83BAD6E0 /* IGYouTubeExtractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGYouTubeExtractor.h; path = IGYouTubeExtractor/IGYouTubeExtractor.h; sourceTree = "<group>"; };
+		DD89E2C338948F13858084EB449554A5 /* Pods-NekoScreenSaverOSX-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NekoScreenSaverOSX-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EF1A50BAAE4DB0D5F5EC3002FDA6A09D /* IGYouTubeExtractor-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "IGYouTubeExtractor-Private.xcconfig"; sourceTree = "<group>"; };
+		F0B6A3E4112D99982A4E107DE0DC84B1 /* Pods-NekoScreenSaverOSX-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NekoScreenSaverOSX-resources.sh"; sourceTree = "<group>"; };
+		F918BCD3C002F742F4E9F7D5CC902392 /* KVOController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVOController-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		156CE59323E96703D118FF6BA0870BD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE7A5CAD1E2BAF89D26E8AA04302D27B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15872D9443F134703088DB1CEA2471A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091D6ACE4797EED034518DEF6B1BA6F5 /* AVFoundation.framework in Frameworks */,
+				A1E9E5526E3EB47BE94DE54A9F71B87B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93338E7AE5A197851ECE1AFCEF5D935A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB98D14DC8016EBF4476403AECC665F7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A185D63C6DAC274AB2A162A540A0B373 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D707AD7D3E8614CCFE80AA2424116A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6422DBA43A56CDE88FD08110D7D99B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92AE8E0575BE26B24451BAB0E968A1B3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F4FD8E79F7E579704AC0F0E914AC73F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F18E6824C8B9824D8892ABBC58E0DF6 /* IGYouTubeExtractor.xcconfig */,
+				EF1A50BAAE4DB0D5F5EC3002FDA6A09D /* IGYouTubeExtractor-Private.xcconfig */,
+				BEB8EBD1F9F33497FD54E73A4093ECEA /* IGYouTubeExtractor-dummy.m */,
+				5D82A3DFFBC2369A4C2975DE5AB75842 /* IGYouTubeExtractor-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IGYouTubeExtractor";
+			sourceTree = "<group>";
+		};
+		334BAD7677E0C361485B3AEE94179EAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C65575008AF33B6599BD5D0F6F413B5 /* Pods-acknowledgements.markdown */,
+				6BEA06FF99A4C47A4C2BCBCCBFFEE710 /* Pods-acknowledgements.plist */,
+				A02E39F7A9AE0A577BBB0D48853F84B6 /* Pods-dummy.m */,
+				2FB0413226AC05BCE05DC443A6337AFE /* Pods-resources.sh */,
+				B1BF648E9B30B00E6A5CBB8B9147971E /* Pods.debug.xcconfig */,
+				C208337D6DFAE02BA67A0BAD1535D178 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		3F037DF527B59DA3087E394CA30D9A1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F90EF688A7020E258929BFF397FD5767 /* IGYouTubeExtractor */,
+				E2710E078A2433C44620170C7A9F800D /* KVOController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		49D44F49475E26E443A215951A59F273 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				0E252E61003A0F77AC2BF999A74FB498 /* AVFoundation.framework */,
+				8650F38A0F10F2F8787B7388E0AE4BC1 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		648F5F7078675A833C8CCCEA6B94576F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				334BAD7677E0C361485B3AEE94179EAA /* Pods */,
+				CF25357B6701B46DB07050EAFD4EE6CE /* Pods-NekoScreenSaverOSX */,
+				870D4D125013AD4F23CD348E31215DE1 /* Pods-NekoScreenSaverOSXPreview */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */,
+				3F037DF527B59DA3087E394CA30D9A1E /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				648F5F7078675A833C8CCCEA6B94576F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		870D4D125013AD4F23CD348E31215DE1 /* Pods-NekoScreenSaverOSXPreview */ = {
+			isa = PBXGroup;
+			children = (
+				652709EC03006EA5E962CF79F25778CD /* Pods-NekoScreenSaverOSXPreview-acknowledgements.markdown */,
+				6B52717762C6E4E436402BE453DD7979 /* Pods-NekoScreenSaverOSXPreview-acknowledgements.plist */,
+				5606CD72D87ED1BB7979B90D3844DC27 /* Pods-NekoScreenSaverOSXPreview-dummy.m */,
+				94D9CC8B3F66CFC775052CDAFE568CAA /* Pods-NekoScreenSaverOSXPreview-resources.sh */,
+				14E773EDEC064E8D867A20E8FDDF27B3 /* Pods-NekoScreenSaverOSXPreview.debug.xcconfig */,
+				A4C27A8DD756BD550E48CCBEC0637548 /* Pods-NekoScreenSaverOSXPreview.release.xcconfig */,
+			);
+			name = "Pods-NekoScreenSaverOSXPreview";
+			path = "Target Support Files/Pods-NekoScreenSaverOSXPreview";
+			sourceTree = "<group>";
+		};
+		BC61B26705BC24BA94FA746BFEF350CF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				43B3E01AE9A00589B561B2F9100E89E5 /* KVOController.xcconfig */,
+				5F349B3457B716A9B4550BFA23EBDDB8 /* KVOController-Private.xcconfig */,
+				93BEF9583AE21365728295B765F34897 /* KVOController-dummy.m */,
+				F918BCD3C002F742F4E9F7D5CC902392 /* KVOController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KVOController";
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11F455985C5D5D3BACB59C941AC1A413 /* libIGYouTubeExtractor.a */,
+				B8539826A7F7EC674410C408BD2C23AE /* libKVOController.a */,
+				9EFA0A6548E8AE2B9B9DBD5199489504 /* libPods.a */,
+				8F84C21723D0B6B9A87B44C6E5BE1DD3 /* libPods-NekoScreenSaverOSX.a */,
+				2A083FEE2AA1D447339B86019ABB27D5 /* libPods-NekoScreenSaverOSXPreview.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF25357B6701B46DB07050EAFD4EE6CE /* Pods-NekoScreenSaverOSX */ = {
+			isa = PBXGroup;
+			children = (
+				DD89E2C338948F13858084EB449554A5 /* Pods-NekoScreenSaverOSX-acknowledgements.markdown */,
+				C45DDCEEEA3997C16523687D41B16AA3 /* Pods-NekoScreenSaverOSX-acknowledgements.plist */,
+				4C33DDE88B17567979FE0F1A56A5B49F /* Pods-NekoScreenSaverOSX-dummy.m */,
+				F0B6A3E4112D99982A4E107DE0DC84B1 /* Pods-NekoScreenSaverOSX-resources.sh */,
+				BF78A0F1255D5A99AFAC502DA9DCB665 /* Pods-NekoScreenSaverOSX.debug.xcconfig */,
+				4D97AF87B108D628B756797BE2ADEC9C /* Pods-NekoScreenSaverOSX.release.xcconfig */,
+			);
+			name = "Pods-NekoScreenSaverOSX";
+			path = "Target Support Files/Pods-NekoScreenSaverOSX";
+			sourceTree = "<group>";
+		};
+		D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49D44F49475E26E443A215951A59F273 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2710E078A2433C44620170C7A9F800D /* KVOController */ = {
+			isa = PBXGroup;
+			children = (
+				7444956804F80A9545EAE88AF5E7DC4F /* FBKVOController.h */,
+				AF750B4E338AC554B50265D7DFDE3D78 /* FBKVOController.m */,
+				BC61B26705BC24BA94FA746BFEF350CF /* Support Files */,
+			);
+			path = KVOController;
+			sourceTree = "<group>";
+		};
+		F90EF688A7020E258929BFF397FD5767 /* IGYouTubeExtractor */ = {
+			isa = PBXGroup;
+			children = (
+				DA9BE9E7286DF164CDB4D67F83BAD6E0 /* IGYouTubeExtractor.h */,
+				6C8451DFDAE2AB38F6723433347C5740 /* IGYouTubeExtractor.m */,
+				1F4FD8E79F7E579704AC0F0E914AC73F /* Support Files */,
+			);
+			path = IGYouTubeExtractor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		502A2249E14DBA2A46A329866EE4FF1E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B842C0AB99033AD1E03B331E95F7520A /* IGYouTubeExtractor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		982871D857382B4A6EB7C5BDDEB54428 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B3F4A0477368050B348E528260E771 /* FBKVOController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0D3BF33D985FED86F54E958CB1A0E9D9 /* Pods-NekoScreenSaverOSXPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A01273E0860437F0C890F118526074 /* Build configuration list for PBXNativeTarget "Pods-NekoScreenSaverOSXPreview" */;
+			buildPhases = (
+				DCDD9B8AB6BE0979E9A86643B9D6A54B /* Sources */,
+				A185D63C6DAC274AB2A162A540A0B373 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8BF68ABB8829072A54DCF5143B1DE24 /* PBXTargetDependency */,
+				2ECD62C24C55E985F64D6A918E1C222A /* PBXTargetDependency */,
+			);
+			name = "Pods-NekoScreenSaverOSXPreview";
+			productName = "Pods-NekoScreenSaverOSXPreview";
+			productReference = 2A083FEE2AA1D447339B86019ABB27D5 /* libPods-NekoScreenSaverOSXPreview.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		95B9902E0ACC74C53CA26EB256B68D1B /* Pods-NekoScreenSaverOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C79822C1221DE222780C1D0A9EA9258 /* Build configuration list for PBXNativeTarget "Pods-NekoScreenSaverOSX" */;
+			buildPhases = (
+				1DE6F577DE49C9FE18BBDFB5F42291B9 /* Sources */,
+				93338E7AE5A197851ECE1AFCEF5D935A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43377B93686BFF5FBA868ACC8D1BF494 /* PBXTargetDependency */,
+				3E4374920EECFE74DF7082A014FA8366 /* PBXTargetDependency */,
+			);
+			name = "Pods-NekoScreenSaverOSX";
+			productName = "Pods-NekoScreenSaverOSX";
+			productReference = 8F84C21723D0B6B9A87B44C6E5BE1DD3 /* libPods-NekoScreenSaverOSX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B608F33C42BD7D09360B1DB22C904415 /* IGYouTubeExtractor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DB6F1302B09C8E775332B10BCAF151C /* Build configuration list for PBXNativeTarget "IGYouTubeExtractor" */;
+			buildPhases = (
+				4FC52A193EEF6685E49F3E2131A02405 /* Sources */,
+				15872D9443F134703088DB1CEA2471A0 /* Frameworks */,
+				502A2249E14DBA2A46A329866EE4FF1E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IGYouTubeExtractor;
+			productName = IGYouTubeExtractor;
+			productReference = 11F455985C5D5D3BACB59C941AC1A413 /* libIGYouTubeExtractor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E3933CC6CF5B39925F548FF151FA6D40 /* KVOController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7483FF69E9BA109FB1896C70B1F53ED3 /* Build configuration list for PBXNativeTarget "KVOController" */;
+			buildPhases = (
+				C4DD85775FE14330174E8FA52C241917 /* Sources */,
+				BC6422DBA43A56CDE88FD08110D7D99B /* Frameworks */,
+				982871D857382B4A6EB7C5BDDEB54428 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KVOController;
+			productName = KVOController;
+			productReference = B8539826A7F7EC674410C408BD2C23AE /* libKVOController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F5EB5EA1EA57B2C86C9AD61474122B8D /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D8B8BAE5089C4FCA6EFA9BD3EFC9074 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				31D749F38106E3052128D7F390345D91 /* Sources */,
+				156CE59323E96703D118FF6BA0870BD5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C813D4AA4617D68789970A08D9DCEE0C /* PBXTargetDependency */,
+				E8362602DF91AFC6757C7D073A5B3571 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 9EFA0A6548E8AE2B9B9DBD5199489504 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B608F33C42BD7D09360B1DB22C904415 /* IGYouTubeExtractor */,
+				E3933CC6CF5B39925F548FF151FA6D40 /* KVOController */,
+				F5EB5EA1EA57B2C86C9AD61474122B8D /* Pods */,
+				95B9902E0ACC74C53CA26EB256B68D1B /* Pods-NekoScreenSaverOSX */,
+				0D3BF33D985FED86F54E958CB1A0E9D9 /* Pods-NekoScreenSaverOSXPreview */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DE6F577DE49C9FE18BBDFB5F42291B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAD98BA591C0424DAAEB73099F71F09 /* Pods-NekoScreenSaverOSX-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31D749F38106E3052128D7F390345D91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73B915FA5EE86D3AD1E346DF91EEBD75 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FC52A193EEF6685E49F3E2131A02405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE53B4C97B08F6A156B81E782DBCDE8 /* IGYouTubeExtractor-dummy.m in Sources */,
+				D2DC2E56B6AE7B76CA2E39DC246126E9 /* IGYouTubeExtractor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DD85775FE14330174E8FA52C241917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56409F2CE40998A7ACF011AADF4242C /* FBKVOController.m in Sources */,
+				F7893A45AC90EAAAB3D26D7F2DD11EC9 /* KVOController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCDD9B8AB6BE0979E9A86643B9D6A54B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46ED056AFC9098F89FC23BB5434934B3 /* Pods-NekoScreenSaverOSXPreview-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2ECD62C24C55E985F64D6A918E1C222A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KVOController;
+			target = E3933CC6CF5B39925F548FF151FA6D40 /* KVOController */;
+			targetProxy = 2444E5F6B63FF460B77E7F0B3325B173 /* PBXContainerItemProxy */;
+		};
+		3E4374920EECFE74DF7082A014FA8366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KVOController;
+			target = E3933CC6CF5B39925F548FF151FA6D40 /* KVOController */;
+			targetProxy = 66397AC7D8FA8007AFFC9738097AB82B /* PBXContainerItemProxy */;
+		};
+		43377B93686BFF5FBA868ACC8D1BF494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IGYouTubeExtractor;
+			target = B608F33C42BD7D09360B1DB22C904415 /* IGYouTubeExtractor */;
+			targetProxy = E29F9247DF6FC07A74B6426C2A6099C4 /* PBXContainerItemProxy */;
+		};
+		C813D4AA4617D68789970A08D9DCEE0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IGYouTubeExtractor;
+			target = B608F33C42BD7D09360B1DB22C904415 /* IGYouTubeExtractor */;
+			targetProxy = 44566CE4B3AD13D055031AF01651E02B /* PBXContainerItemProxy */;
+		};
+		C8BF68ABB8829072A54DCF5143B1DE24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IGYouTubeExtractor;
+			target = B608F33C42BD7D09360B1DB22C904415 /* IGYouTubeExtractor */;
+			targetProxy = 2DE46FD1D2103A406364A323256729F8 /* PBXContainerItemProxy */;
+		};
+		E8362602DF91AFC6757C7D073A5B3571 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KVOController;
+			target = E3933CC6CF5B39925F548FF151FA6D40 /* KVOController */;
+			targetProxy = BCE04DA301DCADDAA32EC54315EBB740 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06B66DF3147F7AE03D0BCD5CB4001BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4C27A8DD756BD550E48CCBEC0637548 /* Pods-NekoScreenSaverOSXPreview.release.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		194247FFA0B0D9A36F5625035D558288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14E773EDEC064E8D867A20E8FDDF27B3 /* Pods-NekoScreenSaverOSXPreview.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		250191CE57A5B5FEF61AC1E7AF6089CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1BF648E9B30B00E6A5CBB8B9147971E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		273C9CE429E9C9A2C8E52D0CCC396AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F349B3457B716A9B4550BFA23EBDDB8 /* KVOController-Private.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/KVOController/KVOController-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		38799431435109AD3F1EB2F5FA211BB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F349B3457B716A9B4550BFA23EBDDB8 /* KVOController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/KVOController/KVOController-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4C29A0964F7878B7E856707CD3CD57F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF1A50BAAE4DB0D5F5EC3002FDA6A09D /* IGYouTubeExtractor-Private.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/IGYouTubeExtractor/IGYouTubeExtractor-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		52D4ECB745D1C035F94BD060EE7F6605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		807B402A2C93ADBECBD28BE8A68467A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D97AF87B108D628B756797BE2ADEC9C /* Pods-NekoScreenSaverOSX.release.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8368C333CA279E7CF86E8F9C61720DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C208337D6DFAE02BA67A0BAD1535D178 /* Pods.release.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A070F153A04DD66F4E492261894B37FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B68E9589841A1A5764671BF3FA1FC463 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF78A0F1255D5A99AFAC502DA9DCB665 /* Pods-NekoScreenSaverOSX.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CC1F8006E251664D7A88EB45369CE49E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF1A50BAAE4DB0D5F5EC3002FDA6A09D /* IGYouTubeExtractor-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/IGYouTubeExtractor/IGYouTubeExtractor-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D8B8BAE5089C4FCA6EFA9BD3EFC9074 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				250191CE57A5B5FEF61AC1E7AF6089CB /* Debug */,
+				8368C333CA279E7CF86E8F9C61720DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D4ECB745D1C035F94BD060EE7F6605 /* Debug */,
+				A070F153A04DD66F4E492261894B37FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7483FF69E9BA109FB1896C70B1F53ED3 /* Build configuration list for PBXNativeTarget "KVOController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38799431435109AD3F1EB2F5FA211BB2 /* Debug */,
+				273C9CE429E9C9A2C8E52D0CCC396AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DB6F1302B09C8E775332B10BCAF151C /* Build configuration list for PBXNativeTarget "IGYouTubeExtractor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC1F8006E251664D7A88EB45369CE49E /* Debug */,
+				4C29A0964F7878B7E856707CD3CD57F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A01273E0860437F0C890F118526074 /* Build configuration list for PBXNativeTarget "Pods-NekoScreenSaverOSXPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				194247FFA0B0D9A36F5625035D558288 /* Debug */,
+				06B66DF3147F7AE03D0BCD5CB4001BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C79822C1221DE222780C1D0A9EA9258 /* Build configuration list for PBXNativeTarget "Pods-NekoScreenSaverOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B68E9589841A1A5764671BF3FA1FC463 /* Debug */,
+				807B402A2C93ADBECBD28BE8A68467A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

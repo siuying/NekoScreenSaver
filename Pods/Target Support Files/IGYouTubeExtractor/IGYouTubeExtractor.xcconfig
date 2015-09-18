@@ -1,0 +1,1 @@
+IGYOUTUBEEXTRACTOR_OTHER_LDFLAGS = -framework "AVFoundation"

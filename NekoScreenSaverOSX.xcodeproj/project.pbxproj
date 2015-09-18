@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20EFCF8CC5800253A3B8B2CE /* libPods-NekoScreenSaverOSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC03B7C10A46FAFDCB8F387 /* libPods-NekoScreenSaverOSX.a */; };
+		543B00C11BAC29DE0020DF06 /* NekoScreenSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B00C01BAC29DE0020DF06 /* NekoScreenSaverView.swift */; };
+		543B00C91BAC2D6E0020DF06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B00C81BAC2D6E0020DF06 /* AppDelegate.swift */; };
+		543B00CB1BAC2D6E0020DF06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543B00CA1BAC2D6E0020DF06 /* Assets.xcassets */; };
+		543B00CE1BAC2D6E0020DF06 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 543B00CC1BAC2D6E0020DF06 /* MainMenu.xib */; };
+		543B00D31BAC2DE10020DF06 /* NekoScreenSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B00C01BAC29DE0020DF06 /* NekoScreenSaverView.swift */; };
+		D2B28B3F43CE23312568E377 /* libPods-NekoScreenSaverOSXPreview.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12022F234F1313507B6CC401 /* libPods-NekoScreenSaverOSXPreview.a */; };
+		DFB27C59B8638708B216169B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 007570AAADF7C25B7801C357 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		007570AAADF7C25B7801C357 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BC03B7C10A46FAFDCB8F387 /* libPods-NekoScreenSaverOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NekoScreenSaverOSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12022F234F1313507B6CC401 /* libPods-NekoScreenSaverOSXPreview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NekoScreenSaverOSXPreview.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		543B00B21BAC29150020DF06 /* NekoScreenSaverOSX.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NekoScreenSaverOSX.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		543B00B91BAC29150020DF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		543B00BF1BAC29DD0020DF06 /* NekoScreenSaverOSX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NekoScreenSaverOSX-Bridging-Header.h"; sourceTree = "<group>"; };
+		543B00C01BAC29DE0020DF06 /* NekoScreenSaverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NekoScreenSaverView.swift; sourceTree = "<group>"; };
+		543B00C61BAC2D6E0020DF06 /* NekoScreenSaverOSXPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NekoScreenSaverOSXPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		543B00C81BAC2D6E0020DF06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		543B00CA1BAC2D6E0020DF06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		543B00CD1BAC2D6E0020DF06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		543B00CF1BAC2D6E0020DF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		543B00D51BAC2EBA0020DF06 /* NekoScreenSaverOSXPreview-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NekoScreenSaverOSXPreview-Bridging-Header.h"; sourceTree = "<group>"; };
+		894DD0186E0E982DABC66FC0 /* Pods-NekoScreenSaverOSXPreview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NekoScreenSaverOSXPreview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NekoScreenSaverOSXPreview/Pods-NekoScreenSaverOSXPreview.debug.xcconfig"; sourceTree = "<group>"; };
+		B7DE9664B611CEB9F67DD250 /* Pods-NekoScreenSaverOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NekoScreenSaverOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NekoScreenSaverOSX/Pods-NekoScreenSaverOSX.debug.xcconfig"; sourceTree = "<group>"; };
+		CD77359B22D88EE6CBF0B01C /* Pods-NekoScreenSaverOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NekoScreenSaverOSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-NekoScreenSaverOSX/Pods-NekoScreenSaverOSX.release.xcconfig"; sourceTree = "<group>"; };
+		CFF5A80D196511B00037276F /* Pods-NekoScreenSaverOSXPreview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NekoScreenSaverOSXPreview.release.xcconfig"; path = "Pods/Target Support Files/Pods-NekoScreenSaverOSXPreview/Pods-NekoScreenSaverOSXPreview.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		543B00AE1BAC29150020DF06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20EFCF8CC5800253A3B8B2CE /* libPods-NekoScreenSaverOSX.a in Frameworks */,
+				DFB27C59B8638708B216169B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543B00C31BAC2D6E0020DF06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2B28B3F43CE23312568E377 /* libPods-NekoScreenSaverOSXPreview.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AB7821F56C3D7D2DF9F83D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7DE9664B611CEB9F67DD250 /* Pods-NekoScreenSaverOSX.debug.xcconfig */,
+				CD77359B22D88EE6CBF0B01C /* Pods-NekoScreenSaverOSX.release.xcconfig */,
+				894DD0186E0E982DABC66FC0 /* Pods-NekoScreenSaverOSXPreview.debug.xcconfig */,
+				CFF5A80D196511B00037276F /* Pods-NekoScreenSaverOSXPreview.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		543B00A81BAC29150020DF06 = {
+			isa = PBXGroup;
+			children = (
+				543B00B41BAC29150020DF06 /* NekoScreenSaverOSX */,
+				543B00C71BAC2D6E0020DF06 /* NekoScreenSaverOSXPreview */,
+				543B00B31BAC29150020DF06 /* Products */,
+				2AB7821F56C3D7D2DF9F83D8 /* Pods */,
+				B0C85C4243443A4B2FCF39C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		543B00B31BAC29150020DF06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				543B00B21BAC29150020DF06 /* NekoScreenSaverOSX.saver */,
+				543B00C61BAC2D6E0020DF06 /* NekoScreenSaverOSXPreview.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		543B00B41BAC29150020DF06 /* NekoScreenSaverOSX */ = {
+			isa = PBXGroup;
+			children = (
+				543B00B91BAC29150020DF06 /* Info.plist */,
+				543B00C01BAC29DE0020DF06 /* NekoScreenSaverView.swift */,
+				543B00BF1BAC29DD0020DF06 /* NekoScreenSaverOSX-Bridging-Header.h */,
+			);
+			path = NekoScreenSaverOSX;
+			sourceTree = "<group>";
+		};
+		543B00C71BAC2D6E0020DF06 /* NekoScreenSaverOSXPreview */ = {
+			isa = PBXGroup;
+			children = (
+				543B00C81BAC2D6E0020DF06 /* AppDelegate.swift */,
+				543B00CA1BAC2D6E0020DF06 /* Assets.xcassets */,
+				543B00CC1BAC2D6E0020DF06 /* MainMenu.xib */,
+				543B00CF1BAC2D6E0020DF06 /* Info.plist */,
+				543B00D51BAC2EBA0020DF06 /* NekoScreenSaverOSXPreview-Bridging-Header.h */,
+			);
+			path = NekoScreenSaverOSXPreview;
+			sourceTree = "<group>";
+		};
+		B0C85C4243443A4B2FCF39C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BC03B7C10A46FAFDCB8F387 /* libPods-NekoScreenSaverOSX.a */,
+				12022F234F1313507B6CC401 /* libPods-NekoScreenSaverOSXPreview.a */,
+				007570AAADF7C25B7801C357 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		543B00AF1BAC29150020DF06 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		543B00B11BAC29150020DF06 /* NekoScreenSaverOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 543B00BC1BAC29150020DF06 /* Build configuration list for PBXNativeTarget "NekoScreenSaverOSX" */;
+			buildPhases = (
+				D79067B486009A9873B30EA6 /* Check Pods Manifest.lock */,
+				543B00AD1BAC29150020DF06 /* Sources */,
+				543B00AE1BAC29150020DF06 /* Frameworks */,
+				543B00AF1BAC29150020DF06 /* Headers */,
+				543B00B01BAC29150020DF06 /* Resources */,
+				9EDFC8C3B32EC010CF3D9138 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NekoScreenSaverOSX;
+			productName = NekoScreenSaverOSX;
+			productReference = 543B00B21BAC29150020DF06 /* NekoScreenSaverOSX.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+		543B00C51BAC2D6E0020DF06 /* NekoScreenSaverOSXPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 543B00D01BAC2D6E0020DF06 /* Build configuration list for PBXNativeTarget "NekoScreenSaverOSXPreview" */;
+			buildPhases = (
+				DF0322F102EB6CC44E9AE415 /* Check Pods Manifest.lock */,
+				543B00C21BAC2D6E0020DF06 /* Sources */,
+				543B00C31BAC2D6E0020DF06 /* Frameworks */,
+				543B00C41BAC2D6E0020DF06 /* Resources */,
+				62CD5BF735CFA7164867D309 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NekoScreenSaverOSXPreview;
+			productName = NekoScreenSaverOSXPreview;
+			productReference = 543B00C61BAC2D6E0020DF06 /* NekoScreenSaverOSXPreview.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		543B00A91BAC29150020DF06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Ignition Soft";
+				TargetAttributes = {
+					543B00B11BAC29150020DF06 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					543B00C51BAC2D6E0020DF06 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 543B00AC1BAC29150020DF06 /* Build configuration list for PBXProject "NekoScreenSaverOSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 543B00A81BAC29150020DF06;
+			productRefGroup = 543B00B31BAC29150020DF06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				543B00B11BAC29150020DF06 /* NekoScreenSaverOSX */,
+				543B00C51BAC2D6E0020DF06 /* NekoScreenSaverOSXPreview */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		543B00B01BAC29150020DF06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543B00C41BAC2D6E0020DF06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543B00CB1BAC2D6E0020DF06 /* Assets.xcassets in Resources */,
+				543B00CE1BAC2D6E0020DF06 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62CD5BF735CFA7164867D309 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NekoScreenSaverOSXPreview/Pods-NekoScreenSaverOSXPreview-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EDFC8C3B32EC010CF3D9138 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D79067B486009A9873B30EA6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF0322F102EB6CC44E9AE415 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		543B00AD1BAC29150020DF06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543B00C11BAC29DE0020DF06 /* NekoScreenSaverView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543B00C21BAC2D6E0020DF06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543B00C91BAC2D6E0020DF06 /* AppDelegate.swift in Sources */,
+				543B00D31BAC2DE10020DF06 /* NekoScreenSaverView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		543B00CC1BAC2D6E0020DF06 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				543B00CD1BAC2D6E0020DF06 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		543B00BA1BAC29150020DF06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		543B00BB1BAC29150020DF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		543B00BD1BAC29150020DF06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7DE9664B611CEB9F67DD250 /* Pods-NekoScreenSaverOSX.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = NekoScreenSaverOSX/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = hk.ignition.NekoScreenSaverOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NekoScreenSaverOSX/NekoScreenSaverOSX-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		543B00BE1BAC29150020DF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD77359B22D88EE6CBF0B01C /* Pods-NekoScreenSaverOSX.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = NekoScreenSaverOSX/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = hk.ignition.NekoScreenSaverOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NekoScreenSaverOSX/NekoScreenSaverOSX-Bridging-Header.h";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+		543B00D11BAC2D6E0020DF06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 894DD0186E0E982DABC66FC0 /* Pods-NekoScreenSaverOSXPreview.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NekoScreenSaverOSXPreview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hk.ignition.NekoScreenSaverOSXPreview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NekoScreenSaverOSXPreview/NekoScreenSaverOSXPreview-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		543B00D21BAC2D6E0020DF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFF5A80D196511B00037276F /* Pods-NekoScreenSaverOSXPreview.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NekoScreenSaverOSXPreview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hk.ignition.NekoScreenSaverOSXPreview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NekoScreenSaverOSXPreview/NekoScreenSaverOSXPreview-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		543B00AC1BAC29150020DF06 /* Build configuration list for PBXProject "NekoScreenSaverOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543B00BA1BAC29150020DF06 /* Debug */,
+				543B00BB1BAC29150020DF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		543B00BC1BAC29150020DF06 /* Build configuration list for PBXNativeTarget "NekoScreenSaverOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543B00BD1BAC29150020DF06 /* Debug */,
+				543B00BE1BAC29150020DF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		543B00D01BAC2D6E0020DF06 /* Build configuration list for PBXNativeTarget "NekoScreenSaverOSXPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543B00D11BAC2D6E0020DF06 /* Debug */,
+				543B00D21BAC2D6E0020DF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 543B00A91BAC29150020DF06 /* Project object */;
+}
