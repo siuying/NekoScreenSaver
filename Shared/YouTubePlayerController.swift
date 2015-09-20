@@ -24,23 +24,24 @@ public class YouTubePlayerController : NSObject {
         addObserver(self, forKeyPath: "player.status", options: .New, context: nil)
 
         // find video URL
-        IGYouTubeExtractor.sharedInstance().extractVideoForIdentifier(youTubeId) { [weak self] (data, error) -> Void in
-            if let controller = self {
-                if let error = error {
-                    Swift.print("error loading data: \(error)")
-
-                } else if let video = data.first as? IGYouTubeVideo {
-                    if let videoURL = video.videoURL {
-                        dispatch_async(dispatch_get_main_queue()) {
-                            print("URL found: \(videoURL)")
-                            controller.playVideoAtURL(videoURL)
-                        }
-                    } else {
-                        print("URL not found: \(data)")
-                    }
-                }
-            }
-        }
+//        YouTubeExtractor
+//        IGYouTubeExtractor.sharedInstance().extractVideoForIdentifier(youTubeId) { [weak self] (data, error) -> Void in
+//            if let controller = self {
+//                if let error = error {
+//                    Swift.print("error loading data: \(error)")
+//
+//                } else if let video = data.first as? IGYouTubeVideo {
+//                    if let videoURL = video.videoURL {
+//                        dispatch_async(dispatch_get_main_queue()) {
+//                            print("URL found: \(videoURL)")
+//                            controller.playVideoAtURL(videoURL)
+//                        }
+//                    } else {
+//                        print("URL not found: \(data)")
+//                    }
+//                }
+//            }
+//        }
     }
     
     public func shutdown() {

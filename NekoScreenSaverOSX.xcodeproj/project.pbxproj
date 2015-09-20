@@ -25,10 +25,9 @@
 		543B01341BAC4FD40020DF06 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543B01321BAC4FD40020DF06 /* AVFoundation.framework */; };
 		543B01351BAC4FD40020DF06 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543B01331BAC4FD40020DF06 /* AVKit.framework */; };
 		543B01371BAC531E0020DF06 /* YouTubePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B01261BAC4F560020DF06 /* YouTubePlayerController.swift */; };
-		543B013D1BAC55700020DF06 /* IGYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 543B013B1BAC55700020DF06 /* IGYouTubeExtractor.m */; };
-		543B013E1BAC55700020DF06 /* IGYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 543B013B1BAC55700020DF06 /* IGYouTubeExtractor.m */; };
 		543B013F1BAC55700020DF06 /* IGYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 543B013B1BAC55700020DF06 /* IGYouTubeExtractor.m */; };
 		543B01511BAC590A0020DF06 /* YouTubePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B01261BAC4F560020DF06 /* YouTubePlayerController.swift */; };
+		546CC41B1BADAA29008CB6ED /* YouTubeExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CC41A1BADAA29008CB6ED /* YouTubeExtractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +61,7 @@
 		543B013A1BAC55700020DF06 /* IGYouTubeExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGYouTubeExtractor.h; sourceTree = "<group>"; };
 		543B013B1BAC55700020DF06 /* IGYouTubeExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGYouTubeExtractor.m; sourceTree = "<group>"; };
 		543B01501BAC57500020DF06 /* NekoScreenSaverTV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NekoScreenSaverTV-Bridging-Header.h"; sourceTree = "<group>"; };
+		546CC41A1BADAA29008CB6ED /* YouTubeExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeExtractor.swift; sourceTree = "<group>"; };
 		6AA8C7A4562CD6C8A56D6B2B /* libPods-NekoScreenSaverTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NekoScreenSaverTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21DB6BB7878238F22AF6DA4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -160,6 +160,7 @@
 			children = (
 				543B01391BAC55700020DF06 /* IGYouTubeExtractor */,
 				543B01261BAC4F560020DF06 /* YouTubePlayerController.swift */,
+				546CC41A1BADAA29008CB6ED /* YouTubeExtractor.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -332,8 +333,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				543B013D1BAC55700020DF06 /* IGYouTubeExtractor.m in Sources */,
 				543B00C11BAC29DE0020DF06 /* NekoScreenSaverView.swift in Sources */,
+				546CC41B1BADAA29008CB6ED /* YouTubeExtractor.swift in Sources */,
 				543B01271BAC4F560020DF06 /* YouTubePlayerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +343,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				543B013E1BAC55700020DF06 /* IGYouTubeExtractor.m in Sources */,
 				543B01371BAC531E0020DF06 /* YouTubePlayerController.swift in Sources */,
 				543B00C91BAC2D6E0020DF06 /* AppDelegate.swift in Sources */,
 				543B00D31BAC2DE10020DF06 /* NekoScreenSaverView.swift in Sources */,
@@ -467,6 +467,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = NekoScreenSaverOSX/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
@@ -486,6 +488,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = NekoScreenSaverOSX/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
