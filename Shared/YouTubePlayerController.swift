@@ -29,11 +29,17 @@ public class YouTubePlayerController : NSObject {
                 if let video = videos.filter({$0.quality == .HD1080}).first ??
                         videos.filter({$0.quality == .HD720}).first ??
                         videos.filter({$0.quality == .Medium360}).first ??
-                        videos.filter({$0.quality == .Small240}).first {
+                        videos.filter({$0.quality == .Small240}).first ??
+                        videos.first {
+                    print("video.videoURL: \(video.videoURL)")
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         self?.playVideoAtURL(video.videoURL)
                     })
+                } else {
+                    print("no videos found: \(videos)")
                 }
+            } else {
+                print("no videos found: \(error)")
             }
         }
     }

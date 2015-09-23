@@ -27,6 +27,8 @@
 		543B01371BAC531E0020DF06 /* YouTubePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B01261BAC4F560020DF06 /* YouTubePlayerController.swift */; };
 		543B01511BAC590A0020DF06 /* YouTubePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B01261BAC4F560020DF06 /* YouTubePlayerController.swift */; };
 		546CC41B1BADAA29008CB6ED /* YouTubeExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CC41A1BADAA29008CB6ED /* YouTubeExtractor.swift */; };
+		54CE78531BB3171D005D60B7 /* YouTubeExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CC41A1BADAA29008CB6ED /* YouTubeExtractor.swift */; settings = {ASSET_TAGS = (); }; };
+		54CE78541BB3171D005D60B7 /* YouTubeExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CC41A1BADAA29008CB6ED /* YouTubeExtractor.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -331,6 +333,7 @@
 			files = (
 				543B01371BAC531E0020DF06 /* YouTubePlayerController.swift in Sources */,
 				543B00C91BAC2D6E0020DF06 /* AppDelegate.swift in Sources */,
+				54CE78531BB3171D005D60B7 /* YouTubeExtractor.swift in Sources */,
 				543B00D31BAC2DE10020DF06 /* NekoScreenSaverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +344,7 @@
 			files = (
 				543B00FA1BAC49DF0020DF06 /* ViewController.swift in Sources */,
 				543B01511BAC590A0020DF06 /* YouTubePlayerController.swift in Sources */,
+				54CE78541BB3171D005D60B7 /* YouTubeExtractor.swift in Sources */,
 				543B00F81BAC49DF0020DF06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

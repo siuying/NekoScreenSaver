@@ -77,7 +77,7 @@ class YouTubeExtractor {
 
     func extractVideoForIdentifier(id: String, completion: YouTubeExtractorCallback) {
         var parameters : [String:String] = ["video_id": id, "ps": "default", "eurl": "", "gl": "US", "hl": AppLanguageIdentifier()]
-        
+        print("extractVideoForIdentifier: \(id), attemptType: \(self.attemptType)")
         switch self.attemptType {
         case .Embedded:
             parameters["el"] = "embedded"
@@ -122,22 +122,27 @@ class YouTubeExtractor {
                             if AVURLAsset.isPlayableExtendedMIMEType(type) {
                                 if let signature = stream["sig"] {
                                     urlString = urlString + "&signature=\(signature)"
-                                    if let streamURL = NSURL(string: urlString) {
-                                        let itagStr = stream["itag"] ?? ""
+                                }
+                                if let streamURL = NSURL(string: urlString), query = streamURL.query {
+                                    let params = self.dictionaryWithQueryString(query)
+                                    if params.keys.contains("signature") {
+                                        let itagStr = stream["itag"] != nil ? stream["itag"]! : ""
                                         let itag = Int(itagStr) ?? 0
-                                        if let quality = VideoQuality(rawValue: itag), let thumbnailURL = thumbnailURL {
+                                        if let quality = VideoQuality(rawValue: itag), thumbnailURL = thumbnailURL {
                                             let video = YouTubeVideo(title: title, videoURL: streamURL, thumbnailURL: thumbnailURL, quality: quality)
                                             videos.append(video)
                                         } else {
-                                            print("UNKNOWN QUALITY: \(itag)")
+                                            print("unknown quality: \(itag)")
                                         }
+                                    } else {
+                                        print("missing signature")
                                     }
                                 }
                             }
                         }
                     }
                     
-                    if video.count > 0 {
+                    if videos.count > 0 {
                         dispatch_async(dispatch_get_main_queue(), { () -> Void in
                             completion(videos, nil)
                         })
@@ -148,20 +153,20 @@ class YouTubeExtractor {
                 }
 
             }
-        }
+        }.resume()
     }
     
     func addQueryStringToURLString(URLString: String, withParameters parameters: [String:String]) -> String {
         var urlWithQueryString = URLString
         for (key, value) in parameters {
-            let encodedKey = key.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
-            let encodedValue = value.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
-
-            if urlWithQueryString.containsString("?") {
-                urlWithQueryString.appendContentsOf("&\(encodedKey)=\(encodedValue)")
-                
-            } else {
-                urlWithQueryString.appendContentsOf("?\(encodedKey)=\(encodedValue)")
+            if let encodedKey = key.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet()),
+                encodedValue = value.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet()) {
+                if urlWithQueryString.containsString("?") {
+                    urlWithQueryString.appendContentsOf("&\(encodedKey)=\(encodedValue)")
+                    
+                } else {
+                    urlWithQueryString.appendContentsOf("?\(encodedKey)=\(encodedValue)")
+                }
             }
         }
         return urlWithQueryString
@@ -173,7 +178,7 @@ class YouTubeExtractor {
         for field in query.componentsSeparatedByString("&") {
             let pair = field.componentsSeparatedByString("=")
             if pair.count == 2 {
-                result[pair[0]] = pair[1].stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
+                result[pair[0]] = pair[1].stringByRemovingPercentEncoding?.stringByReplacingOccurrencesOfString("+", withString: " ")
             }
         }
         return result
