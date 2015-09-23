@@ -128,6 +128,8 @@ class YouTubeExtractor {
                                         if let quality = VideoQuality(rawValue: itag), let thumbnailURL = thumbnailURL {
                                             let video = YouTubeVideo(title: title, videoURL: streamURL, thumbnailURL: thumbnailURL, quality: quality)
                                             videos.append(video)
+                                        } else {
+                                            print("UNKNOWN QUALITY: \(itag)")
                                         }
                                     }
                                 }

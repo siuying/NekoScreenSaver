@@ -25,7 +25,6 @@
 		543B01341BAC4FD40020DF06 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543B01321BAC4FD40020DF06 /* AVFoundation.framework */; };
 		543B01351BAC4FD40020DF06 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543B01331BAC4FD40020DF06 /* AVKit.framework */; };
 		543B01371BAC531E0020DF06 /* YouTubePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B01261BAC4F560020DF06 /* YouTubePlayerController.swift */; };
-		543B013F1BAC55700020DF06 /* IGYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 543B013B1BAC55700020DF06 /* IGYouTubeExtractor.m */; };
 		543B01511BAC590A0020DF06 /* YouTubePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B01261BAC4F560020DF06 /* YouTubePlayerController.swift */; };
 		546CC41B1BADAA29008CB6ED /* YouTubeExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CC41A1BADAA29008CB6ED /* YouTubeExtractor.swift */; };
 /* End PBXBuildFile section */
@@ -58,8 +57,6 @@
 		543B01301BAC4FCD0020DF06 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
 		543B01321BAC4FD40020DF06 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		543B01331BAC4FD40020DF06 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
-		543B013A1BAC55700020DF06 /* IGYouTubeExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGYouTubeExtractor.h; sourceTree = "<group>"; };
-		543B013B1BAC55700020DF06 /* IGYouTubeExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGYouTubeExtractor.m; sourceTree = "<group>"; };
 		543B01501BAC57500020DF06 /* NekoScreenSaverTV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NekoScreenSaverTV-Bridging-Header.h"; sourceTree = "<group>"; };
 		546CC41A1BADAA29008CB6ED /* YouTubeExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeExtractor.swift; sourceTree = "<group>"; };
 		6AA8C7A4562CD6C8A56D6B2B /* libPods-NekoScreenSaverTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NekoScreenSaverTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,22 +155,11 @@
 		543B01251BAC4F560020DF06 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				543B01391BAC55700020DF06 /* IGYouTubeExtractor */,
 				543B01261BAC4F560020DF06 /* YouTubePlayerController.swift */,
 				546CC41A1BADAA29008CB6ED /* YouTubeExtractor.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
-		};
-		543B01391BAC55700020DF06 /* IGYouTubeExtractor */ = {
-			isa = PBXGroup;
-			children = (
-				543B013A1BAC55700020DF06 /* IGYouTubeExtractor.h */,
-				543B013B1BAC55700020DF06 /* IGYouTubeExtractor.m */,
-			);
-			name = IGYouTubeExtractor;
-			path = vendor/IGYouTubeExtractor/IGYouTubeExtractor;
-			sourceTree = SOURCE_ROOT;
 		};
 		B0C85C4243443A4B2FCF39C6 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -353,7 +339,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				543B013F1BAC55700020DF06 /* IGYouTubeExtractor.m in Sources */,
 				543B00FA1BAC49DF0020DF06 /* ViewController.swift in Sources */,
 				543B01511BAC590A0020DF06 /* YouTubePlayerController.swift in Sources */,
 				543B00F81BAC49DF0020DF06 /* AppDelegate.swift in Sources */,
