@@ -18,6 +18,7 @@ public class YouTubePlayerController : NSObject {
     public init(youTubeId: String) {
         self.youTubeId = youTubeId
         self.player = AVPlayer()
+        self.player.muted = true
     }
     
     public func setup() {
