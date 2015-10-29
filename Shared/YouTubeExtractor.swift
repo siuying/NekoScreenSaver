@@ -67,10 +67,11 @@ class YouTubeExtractor {
     
     enum VideoQuality : Int {
         case Unknown        = 0
-        case Small240       = 36
-        case Medium360      = 18
-        case HD720          = 22
-        case HD1080         = 37
+        case Small240       = 133
+        case Medium360      = 134
+        case Medium480      = 135
+        case HD720          = 136
+        case HD1080         = 137
     }
     
     var attemptType : AttemptType = .Embedded

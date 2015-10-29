@@ -12,7 +12,10 @@ import AVKit
 class AVView : UIView {
     init(frame: CGRect, player: AVPlayer) {
         super.init(frame: frame)
-        
+
+        let layer = self.layer as! AVPlayerLayer
+        layer.player = player
+        layer.videoGravity = AVLayerVideoGravityResizeAspectFill
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -39,10 +42,9 @@ class ViewController: UIViewController {
 
     override func loadView() {
         super.loadView()
-        
-        print("supported media: \(AVURLAsset.audiovisualMIMETypes())")
 
         screenSaverController.setup()
+
         avView = AVView(frame: self.view.bounds, player: screenSaverController.player)
         avView!.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
         view.addSubview(avView!)

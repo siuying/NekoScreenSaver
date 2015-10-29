@@ -53,14 +53,16 @@ public class YouTubePlayerController : NSObject {
     func playVideoAtURL(URL: NSURL) {
         self.player.replaceCurrentItemWithPlayerItem(AVPlayerItem(URL: URL))
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "playerDidEnded:", name: AVPlayerItemDidPlayToEndTimeNotification, object: nil)
+        
     }
-    
+
     func playerDidEnded(n: NSNotification) {
         self.player.seekToTime(kCMTimeZero)
     }
     
     func seekToRandomTimeAndPlay() {
         if let duration = self.player.currentItem?.asset.duration {
+            print("duration: \(duration)")
             let randomTime = Float64(arc4random() % UInt32(duration.seconds))
             self.player.seekToTime(CMTimeMakeWithSeconds(randomTime, Int32(NSEC_PER_SEC)), toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
             self.player.play()
@@ -68,8 +70,15 @@ public class YouTubePlayerController : NSObject {
     }
     
     @objc public override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
-        if keyPath == "player.status" && self.player.status == .ReadyToPlay {
-            self.seekToRandomTimeAndPlay()
+        if keyPath == "player.status" {
+            switch self.player.status {
+            case .ReadyToPlay:
+                self.seekToRandomTimeAndPlay()
+            case .Failed:
+                print("error: \(self.player.error)")
+            default:
+                print("status: \(self.player.status)")
+            }
         }
     }
 }
